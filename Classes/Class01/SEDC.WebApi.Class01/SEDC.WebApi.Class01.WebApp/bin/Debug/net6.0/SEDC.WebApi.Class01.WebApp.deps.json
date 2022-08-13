@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SEDC.WebApi.Class01.WebApp/1.0.0": {
+        "runtime": {
+          "SEDC.WebApi.Class01.WebApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SEDC.WebApi.Class01.WebApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
