@@ -31,7 +31,6 @@ namespace SEDC.WEBApi.Class02.App.Controllers
             catch (Exception)
             {
                 return NotFound();
-                throw;
             };
         }
     }
