@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ntCVUpQPgueur0KW7u5TrmJennOtkR8BohtSAH72yaBq6oA2sKFXilHCwIsRlVq7weJqz5lp3v7/oP05E+cKsg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\Classes\\Class03\\SEDC.WebApi.Class03.1\\SEDC.WebApi.Class03.1.App\\SEDC.WebApi.Class03.1.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aneta\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
