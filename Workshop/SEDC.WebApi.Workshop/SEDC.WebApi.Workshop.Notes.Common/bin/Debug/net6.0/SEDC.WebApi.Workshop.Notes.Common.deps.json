@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SEDC.WebApi.Workshop.Notes.Common/1.0.0": {
+        "dependencies": {
+          "SEDC.WebApi.Workshop.Notes.DataModels": "1.0.0",
+          "SEDC.WebApi.Workshop.Notes.ServiceModels": "1.0.0"
+        },
+        "runtime": {
+          "SEDC.WebApi.Workshop.Notes.Common.dll": {}
+        }
+      },
+      "SEDC.WebApi.Workshop.Notes.DataModels/1.0.0": {
+        "runtime": {
+          "SEDC.WebApi.Workshop.Notes.DataModels.dll": {}
+        }
+      },
+      "SEDC.WebApi.Workshop.Notes.ServiceModels/1.0.0": {
+        "runtime": {
+          "SEDC.WebApi.Workshop.Notes.ServiceModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SEDC.WebApi.Workshop.Notes.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SEDC.WebApi.Workshop.Notes.DataModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SEDC.WebApi.Workshop.Notes.ServiceModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
