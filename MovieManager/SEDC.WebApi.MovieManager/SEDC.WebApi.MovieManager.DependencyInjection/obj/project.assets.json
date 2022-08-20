@@ -1,0 +1,224 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "SEDC.WebApi.MovieManager.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SEDC.WebApi.MovieManager.DataModels": "1.0.0",
+          "SEDC.WebApi.MovieManager.ServiceModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.Common.dll": {}
+        }
+      },
+      "SEDC.WebApi.MovieManager.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SEDC.WebApi.MovieManager.DataModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.DataAccess.dll": {}
+        }
+      },
+      "SEDC.WebApi.MovieManager.DataModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.DataModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.DataModels.dll": {}
+        }
+      },
+      "SEDC.WebApi.MovieManager.ServiceModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.ServiceModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.ServiceModels.dll": {}
+        }
+      },
+      "SEDC.WebApi.MovieManager.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SEDC.WebApi.MovieManager.Common": "1.0.0",
+          "SEDC.WebApi.MovieManager.DataAccess": "1.0.0",
+          "SEDC.WebApi.MovieManager.DataModels": "1.0.0",
+          "SEDC.WebApi.MovieManager.ServiceModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.Services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
+      "sha512": "xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "SEDC.WebApi.MovieManager.Common/1.0.0": {
+      "type": "project",
+      "path": "../SEDC.WebApi.MovieManager.Common/SEDC.WebApi.MovieManager.Common.csproj",
+      "msbuildProject": "../SEDC.WebApi.MovieManager.Common/SEDC.WebApi.MovieManager.Common.csproj"
+    },
+    "SEDC.WebApi.MovieManager.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../SEDC.WebApi.MovieManager.DataAccess/SEDC.WebApi.MovieManager.DataAccess.csproj",
+      "msbuildProject": "../SEDC.WebApi.MovieManager.DataAccess/SEDC.WebApi.MovieManager.DataAccess.csproj"
+    },
+    "SEDC.WebApi.MovieManager.DataModels/1.0.0": {
+      "type": "project",
+      "path": "../SEDC.WebApi.MovieManager.DataModels/SEDC.WebApi.MovieManager.DataModels.csproj",
+      "msbuildProject": "../SEDC.WebApi.MovieManager.DataModels/SEDC.WebApi.MovieManager.DataModels.csproj"
+    },
+    "SEDC.WebApi.MovieManager.ServiceModels/1.0.0": {
+      "type": "project",
+      "path": "../SEDC.WebApi.MovieManager.ServiceModels/SEDC.WebApi.MovieManager.ServiceModels.csproj",
+      "msbuildProject": "../SEDC.WebApi.MovieManager.ServiceModels/SEDC.WebApi.MovieManager.ServiceModels.csproj"
+    },
+    "SEDC.WebApi.MovieManager.Services/1.0.0": {
+      "type": "project",
+      "path": "../SEDC.WebApi.MovieManager.Services/SEDC.WebApi.MovieManager.Services.csproj",
+      "msbuildProject": "../SEDC.WebApi.MovieManager.Services/SEDC.WebApi.MovieManager.Services.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 6.0.0",
+      "SEDC.WebApi.MovieManager.Common >= 1.0.0",
+      "SEDC.WebApi.MovieManager.DataAccess >= 1.0.0",
+      "SEDC.WebApi.MovieManager.DataModels >= 1.0.0",
+      "SEDC.WebApi.MovieManager.Services >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Aneta\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.DependencyInjection\\SEDC.WebApi.MovieManager.DependencyInjection.csproj",
+      "projectName": "SEDC.WebApi.MovieManager.DependencyInjection",
+      "projectPath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.DependencyInjection\\SEDC.WebApi.MovieManager.DependencyInjection.csproj",
+      "packagesPath": "C:\\Users\\Aneta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.DependencyInjection\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Aneta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.Common\\SEDC.WebApi.MovieManager.Common.csproj": {
+              "projectPath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.Common\\SEDC.WebApi.MovieManager.Common.csproj"
+            },
+            "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.DataAccess\\SEDC.WebApi.MovieManager.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.DataAccess\\SEDC.WebApi.MovieManager.DataAccess.csproj"
+            },
+            "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.DataModels\\SEDC.WebApi.MovieManager.DataModels.csproj": {
+              "projectPath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.DataModels\\SEDC.WebApi.MovieManager.DataModels.csproj"
+            },
+            "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.Services\\SEDC.WebApi.MovieManager.Services.csproj": {
+              "projectPath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.Services\\SEDC.WebApi.MovieManager.Services.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "target": "Package",
+            "version": "[6.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

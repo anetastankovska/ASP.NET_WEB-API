@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SEDC.WebApi.MovieManager.Common\SEDC.WebApi.MovieManager.Common.csproj" />
+    <ProjectReference Include="..\SEDC.WebApi.MovieManager.DataAccess\SEDC.WebApi.MovieManager.DataAccess.csproj" />
+    <ProjectReference Include="..\SEDC.WebApi.MovieManager.DataModels\SEDC.WebApi.MovieManager.DataModels.csproj" />
+    <ProjectReference Include="..\SEDC.WebApi.MovieManager.ServiceModels\SEDC.WebApi.MovieManager.ServiceModels.csproj" />
+  </ItemGroup>
+
+</Project>

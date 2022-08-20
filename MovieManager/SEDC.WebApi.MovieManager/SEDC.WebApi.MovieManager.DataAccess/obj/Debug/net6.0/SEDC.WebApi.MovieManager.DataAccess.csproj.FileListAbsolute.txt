@@ -1,0 +1,15 @@
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.AssemblyInfo.cs
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\bin\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.deps.json
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\bin\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\bin\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\bin\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\bin\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.csproj.CopyComplete
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\refint\SEDC.WebApi.MovieManager.DataAccess.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\ref\SEDC.WebApi.MovieManager.DataAccess.dll

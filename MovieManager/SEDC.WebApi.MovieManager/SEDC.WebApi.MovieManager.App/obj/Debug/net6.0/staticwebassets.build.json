@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "7nCIm7nU8ZYOFJukogQBiz2pPKVdZ9iVEJPbeMhE3OM=",
+  "Source": "SEDC.WebApi.MovieManager.App",
+  "BasePath": "_content/SEDC.WebApi.MovieManager.App",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

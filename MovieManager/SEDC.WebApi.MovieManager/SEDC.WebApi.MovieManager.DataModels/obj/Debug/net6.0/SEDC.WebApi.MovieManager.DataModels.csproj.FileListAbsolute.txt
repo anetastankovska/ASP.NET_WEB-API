@@ -1,0 +1,12 @@
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataModels\bin\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.deps.json
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataModels\bin\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataModels\bin\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataModels\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.csproj.AssemblyReference.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataModels\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataModels\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.AssemblyInfoInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataModels\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.AssemblyInfo.cs
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataModels\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.csproj.CoreCompileInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataModels\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataModels\obj\Debug\net6.0\refint\SEDC.WebApi.MovieManager.DataModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataModels\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataModels\obj\Debug\net6.0\ref\SEDC.WebApi.MovieManager.DataModels.dll

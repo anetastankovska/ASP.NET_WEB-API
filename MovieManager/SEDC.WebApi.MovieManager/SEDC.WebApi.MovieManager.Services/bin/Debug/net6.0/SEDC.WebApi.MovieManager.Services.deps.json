@@ -1,0 +1,76 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SEDC.WebApi.MovieManager.Services/1.0.0": {
+        "dependencies": {
+          "SEDC.WebApi.MovieManager.Common": "1.0.0",
+          "SEDC.WebApi.MovieManager.DataAccess": "1.0.0",
+          "SEDC.WebApi.MovieManager.DataModels": "1.0.0",
+          "SEDC.WebApi.MovieManager.ServiceModels": "1.0.0"
+        },
+        "runtime": {
+          "SEDC.WebApi.MovieManager.Services.dll": {}
+        }
+      },
+      "SEDC.WebApi.MovieManager.Common/1.0.0": {
+        "dependencies": {
+          "SEDC.WebApi.MovieManager.DataModels": "1.0.0",
+          "SEDC.WebApi.MovieManager.ServiceModels": "1.0.0"
+        },
+        "runtime": {
+          "SEDC.WebApi.MovieManager.Common.dll": {}
+        }
+      },
+      "SEDC.WebApi.MovieManager.DataAccess/1.0.0": {
+        "dependencies": {
+          "SEDC.WebApi.MovieManager.DataModels": "1.0.0"
+        },
+        "runtime": {
+          "SEDC.WebApi.MovieManager.DataAccess.dll": {}
+        }
+      },
+      "SEDC.WebApi.MovieManager.DataModels/1.0.0": {
+        "runtime": {
+          "SEDC.WebApi.MovieManager.DataModels.dll": {}
+        }
+      },
+      "SEDC.WebApi.MovieManager.ServiceModels/1.0.0": {
+        "runtime": {
+          "SEDC.WebApi.MovieManager.ServiceModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SEDC.WebApi.MovieManager.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SEDC.WebApi.MovieManager.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SEDC.WebApi.MovieManager.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SEDC.WebApi.MovieManager.DataModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SEDC.WebApi.MovieManager.ServiceModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

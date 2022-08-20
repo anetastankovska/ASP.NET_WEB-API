@@ -1,0 +1,17 @@
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Common.csproj.AssemblyReference.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Common.AssemblyInfoInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Common.AssemblyInfo.cs
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Common.csproj.CoreCompileInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\bin\Debug\net6.0\SEDC.WebApi.MovieManager.Common.deps.json
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\bin\Debug\net6.0\SEDC.WebApi.MovieManager.Common.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\bin\Debug\net6.0\SEDC.WebApi.MovieManager.Common.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\bin\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\bin\Debug\net6.0\SEDC.WebApi.MovieManager.ServiceModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\bin\Debug\net6.0\SEDC.WebApi.MovieManager.DataModels.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\bin\Debug\net6.0\SEDC.WebApi.MovieManager.ServiceModels.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Common.csproj.CopyComplete
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Common.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\obj\Debug\net6.0\refint\SEDC.WebApi.MovieManager.Common.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Common.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Common\obj\Debug\net6.0\ref\SEDC.WebApi.MovieManager.Common.dll

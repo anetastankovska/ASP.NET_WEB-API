@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NzqU45LzeE9SfnU4Xg386anfSU+r03YAELG/rGbphIKZQZJTgq2ukhiXAtXGZ9X76T+ffZX7Tg+mbO5DWMDhxg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.DependencyInjection\\SEDC.WebApi.MovieManager.DependencyInjection.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aneta\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

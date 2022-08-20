@@ -1,0 +1,12 @@
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Core\bin\Debug\net6.0\SEDC.WebApi.MovieManager.Core.deps.json
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Core\bin\Debug\net6.0\SEDC.WebApi.MovieManager.Core.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Core\bin\Debug\net6.0\SEDC.WebApi.MovieManager.Core.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Core\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Core.csproj.AssemblyReference.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Core\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Core\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Core.AssemblyInfoInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Core\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Core.AssemblyInfo.cs
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Core\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Core.csproj.CoreCompileInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Core\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Core.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Core\obj\Debug\net6.0\refint\SEDC.WebApi.MovieManager.Core.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Core\obj\Debug\net6.0\SEDC.WebApi.MovieManager.Core.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.Core\obj\Debug\net6.0\ref\SEDC.WebApi.MovieManager.Core.dll

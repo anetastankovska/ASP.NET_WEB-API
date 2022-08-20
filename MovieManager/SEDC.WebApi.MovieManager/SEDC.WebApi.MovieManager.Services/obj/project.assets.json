@@ -1,0 +1,159 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "SEDC.WebApi.MovieManager.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SEDC.WebApi.MovieManager.DataModels": "1.0.0",
+          "SEDC.WebApi.MovieManager.ServiceModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.Common.dll": {}
+        }
+      },
+      "SEDC.WebApi.MovieManager.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SEDC.WebApi.MovieManager.DataModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.DataAccess.dll": {}
+        }
+      },
+      "SEDC.WebApi.MovieManager.DataModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.DataModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.DataModels.dll": {}
+        }
+      },
+      "SEDC.WebApi.MovieManager.ServiceModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.ServiceModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SEDC.WebApi.MovieManager.ServiceModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SEDC.WebApi.MovieManager.Common/1.0.0": {
+      "type": "project",
+      "path": "../SEDC.WebApi.MovieManager.Common/SEDC.WebApi.MovieManager.Common.csproj",
+      "msbuildProject": "../SEDC.WebApi.MovieManager.Common/SEDC.WebApi.MovieManager.Common.csproj"
+    },
+    "SEDC.WebApi.MovieManager.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../SEDC.WebApi.MovieManager.DataAccess/SEDC.WebApi.MovieManager.DataAccess.csproj",
+      "msbuildProject": "../SEDC.WebApi.MovieManager.DataAccess/SEDC.WebApi.MovieManager.DataAccess.csproj"
+    },
+    "SEDC.WebApi.MovieManager.DataModels/1.0.0": {
+      "type": "project",
+      "path": "../SEDC.WebApi.MovieManager.DataModels/SEDC.WebApi.MovieManager.DataModels.csproj",
+      "msbuildProject": "../SEDC.WebApi.MovieManager.DataModels/SEDC.WebApi.MovieManager.DataModels.csproj"
+    },
+    "SEDC.WebApi.MovieManager.ServiceModels/1.0.0": {
+      "type": "project",
+      "path": "../SEDC.WebApi.MovieManager.ServiceModels/SEDC.WebApi.MovieManager.ServiceModels.csproj",
+      "msbuildProject": "../SEDC.WebApi.MovieManager.ServiceModels/SEDC.WebApi.MovieManager.ServiceModels.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "SEDC.WebApi.MovieManager.Common >= 1.0.0",
+      "SEDC.WebApi.MovieManager.DataAccess >= 1.0.0",
+      "SEDC.WebApi.MovieManager.DataModels >= 1.0.0",
+      "SEDC.WebApi.MovieManager.ServiceModels >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Aneta\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.Services\\SEDC.WebApi.MovieManager.Services.csproj",
+      "projectName": "SEDC.WebApi.MovieManager.Services",
+      "projectPath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.Services\\SEDC.WebApi.MovieManager.Services.csproj",
+      "packagesPath": "C:\\Users\\Aneta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.Services\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Aneta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.Common\\SEDC.WebApi.MovieManager.Common.csproj": {
+              "projectPath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.Common\\SEDC.WebApi.MovieManager.Common.csproj"
+            },
+            "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.DataAccess\\SEDC.WebApi.MovieManager.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.DataAccess\\SEDC.WebApi.MovieManager.DataAccess.csproj"
+            },
+            "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.DataModels\\SEDC.WebApi.MovieManager.DataModels.csproj": {
+              "projectPath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.DataModels\\SEDC.WebApi.MovieManager.DataModels.csproj"
+            },
+            "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.ServiceModels\\SEDC.WebApi.MovieManager.ServiceModels.csproj": {
+              "projectPath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.ServiceModels\\SEDC.WebApi.MovieManager.ServiceModels.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SEDC.WebApi.MovieManager.Common\SEDC.WebApi.MovieManager.Common.csproj" />
+    <ProjectReference Include="..\SEDC.WebApi.MovieManager.DependencyInjection\SEDC.WebApi.MovieManager.DependencyInjection.csproj" />
+    <ProjectReference Include="..\SEDC.WebApi.MovieManager.ServiceModels\SEDC.WebApi.MovieManager.ServiceModels.csproj" />
+    <ProjectReference Include="..\SEDC.WebApi.MovieManager.Services\SEDC.WebApi.MovieManager.Services.csproj" />
+  </ItemGroup>
+
+</Project>
