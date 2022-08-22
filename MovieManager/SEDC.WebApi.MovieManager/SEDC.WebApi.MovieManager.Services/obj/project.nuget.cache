@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "GyzBn5hpxTwq5QUHwiOECuiwBYqnmt7hKCFCJia6kBbmMzrGHODXS3+BxWw+D81PryYc5fPE+pvJmBFAVxgt1g==",
+  "dgSpecHash": "N9dY8oaqm+8HW5qeq0TK97DIw+RxcCvi3BQ5t0/Js0qSPWCVxo+fPP5EEkkxQpfAmkrrXGhA9VaT2eDtDqweng==",
   "success": true,
   "projectFilePath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\MovieManager\\SEDC.WebApi.MovieManager\\SEDC.WebApi.MovieManager.Services\\SEDC.WebApi.MovieManager.Services.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Aneta\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

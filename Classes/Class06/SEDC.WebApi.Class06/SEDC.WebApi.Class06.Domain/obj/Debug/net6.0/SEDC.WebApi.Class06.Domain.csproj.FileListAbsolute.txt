@@ -1,0 +1,12 @@
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Classes\Class06\SEDC.WebApi.Class06\SEDC.WebApi.Class06.Domain\bin\Debug\net6.0\SEDC.WebApi.Class06.Domain.deps.json
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Classes\Class06\SEDC.WebApi.Class06\SEDC.WebApi.Class06.Domain\bin\Debug\net6.0\SEDC.WebApi.Class06.Domain.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Classes\Class06\SEDC.WebApi.Class06\SEDC.WebApi.Class06.Domain\bin\Debug\net6.0\SEDC.WebApi.Class06.Domain.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Classes\Class06\SEDC.WebApi.Class06\SEDC.WebApi.Class06.Domain\obj\Debug\net6.0\SEDC.WebApi.Class06.Domain.csproj.AssemblyReference.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Classes\Class06\SEDC.WebApi.Class06\SEDC.WebApi.Class06.Domain\obj\Debug\net6.0\SEDC.WebApi.Class06.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Classes\Class06\SEDC.WebApi.Class06\SEDC.WebApi.Class06.Domain\obj\Debug\net6.0\SEDC.WebApi.Class06.Domain.AssemblyInfoInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Classes\Class06\SEDC.WebApi.Class06\SEDC.WebApi.Class06.Domain\obj\Debug\net6.0\SEDC.WebApi.Class06.Domain.AssemblyInfo.cs
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Classes\Class06\SEDC.WebApi.Class06\SEDC.WebApi.Class06.Domain\obj\Debug\net6.0\SEDC.WebApi.Class06.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Classes\Class06\SEDC.WebApi.Class06\SEDC.WebApi.Class06.Domain\obj\Debug\net6.0\SEDC.WebApi.Class06.Domain.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Classes\Class06\SEDC.WebApi.Class06\SEDC.WebApi.Class06.Domain\obj\Debug\net6.0\refint\SEDC.WebApi.Class06.Domain.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Classes\Class06\SEDC.WebApi.Class06\SEDC.WebApi.Class06.Domain\obj\Debug\net6.0\SEDC.WebApi.Class06.Domain.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Classes\Class06\SEDC.WebApi.Class06\SEDC.WebApi.Class06.Domain\obj\Debug\net6.0\ref\SEDC.WebApi.Class06.Domain.dll
