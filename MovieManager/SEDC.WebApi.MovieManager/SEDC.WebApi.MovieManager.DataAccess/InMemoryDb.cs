@@ -63,7 +63,7 @@ namespace SEDC.WebApi.MovieManager.DataAccess
             new Movie
             {
                 Id = 7,
-                Title = "The shawshank redemption",
+                Title = "The Shawshank Redemption",
                 Description = "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
                 Year = 1994,
                 Genre = Genre.Drama
@@ -119,7 +119,7 @@ namespace SEDC.WebApi.MovieManager.DataAccess
             new Movie
             {
                 Id = 14,
-                Title = "Mamento",
+                Title = "Memento",
                 Description = "A man with short-term memory loss attempts to track down his wife's murderer.",
                 Year = 2000,
                 Genre = Genre.Thriller

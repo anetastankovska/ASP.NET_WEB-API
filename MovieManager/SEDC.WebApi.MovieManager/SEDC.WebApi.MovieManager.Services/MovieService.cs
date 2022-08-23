@@ -36,9 +36,16 @@ namespace SEDC.WebApi.MovieManager.Services
             return movie.Map();
         }
 
-        public int Insert(MovieDto entity)
+        public int Insert(CreateMovieDto entity)
         {
-            throw new NotImplementedException();
+            var movie = new Movie
+            {
+                Id = _movierepository.GetAll().Count() + 1,
+                Title = entity.Title,
+                Description = entity.Description,
+                Year = entity.Year,
+                Genre = entity.Genre as Genre
+            };
         }
 
         public int Update(MovieDto entity)
@@ -46,14 +53,17 @@ namespace SEDC.WebApi.MovieManager.Services
             throw new NotImplementedException();
         }
 
-        public void Delete(MovieDto entity)
+        public void Delete(int id)
         {
-            var movieTodelete = _movierepository.GetAll().FirstOrDefault(x => x.Id == entity.Id);
+            var movieTodelete = _movierepository.GetAll().FirstOrDefault(x => x.Id == id);
             if (movieTodelete != null)
             {
                 _movierepository.Delete(movieTodelete);
             }
-            throw new Exception("The movie cannot be found");         
+            else
+            {
+                throw new Exception("The movie cannot be found");         
+            }
         }
 
         public IEnumerable<MovieDto> FilterBy(Func<MovieDto, bool> filter)

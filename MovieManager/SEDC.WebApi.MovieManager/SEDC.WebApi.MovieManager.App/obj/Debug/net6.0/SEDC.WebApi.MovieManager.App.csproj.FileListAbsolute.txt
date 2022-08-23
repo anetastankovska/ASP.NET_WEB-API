@@ -37,3 +37,5 @@ C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManage
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.App\obj\Debug\net6.0\SEDC.WebApi.MovieManager.App.pdb
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.App\obj\Debug\net6.0\SEDC.WebApi.MovieManager.App.genruntimeconfig.cache
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.App\obj\Debug\net6.0\ref\SEDC.WebApi.MovieManager.App.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.App\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.App\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

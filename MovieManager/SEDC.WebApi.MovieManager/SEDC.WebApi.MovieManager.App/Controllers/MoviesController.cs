@@ -50,7 +50,12 @@ namespace SEDC.WebApi.MovieManager.App.Controllers
         {
             try
             {
-                return Ok(_movieService.FilterBy(x => x.Genre.Equals(genre, StringComparison.InvariantCultureIgnoreCase)));
+                var movies = _movieService.FilterBy(x => x.Genre.Equals(genre, StringComparison.InvariantCultureIgnoreCase));
+                if(movies == null)
+                {
+                    throw new Exception("Movies not found");
+                }
+                return Ok(movies);
             }
             catch (Exception ex)
             {
@@ -58,13 +63,18 @@ namespace SEDC.WebApi.MovieManager.App.Controllers
             }
         }
 
-        [HttpGet("year/{filter}")]
-        public ActionResult GetByYear(string filter)
+        [HttpGet("year/{year}")]
+        public ActionResult GetByYear(string year)
         {
             try
             {
-                int year = int.Parse(filter);
-                return Ok(_movieService.FilterBy(x => x.Year == year));
+                int parsedYear = int.Parse(year);
+                var movies = _movieService.FilterBy(x => x.Year == parsedYear);
+                if(movies == null)
+                {
+                    throw new Exception("There are no movies in the selected year.");
+                }
+                return Ok(movies);
             }
             catch (Exception ex)
             {
@@ -82,16 +92,17 @@ namespace SEDC.WebApi.MovieManager.App.Controllers
 
         //}
 
-        public ActionResult Delete(MovieDto movieDto)
+        [HttpDelete("{id}")]
+        public ActionResult Delete([FromRoute] int id)
         {
             try
             {
-                _movieService.Delete(movieDto);
-                return Ok("The movie has been deleted");
+                _movieService.Delete(id);
+                return Ok($"The movie with id {id} has been deleted");
             }
             catch (Exception ex)
             {
-                return NotFound(ex.Message);
+                return BadRequest(ex.Message);
             }
         }
     }

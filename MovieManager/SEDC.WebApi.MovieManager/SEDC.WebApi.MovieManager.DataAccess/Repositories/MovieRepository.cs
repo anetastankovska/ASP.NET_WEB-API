@@ -40,7 +40,7 @@ namespace SEDC.WebApi.MovieManager.DataAccess.Repositories
         public int Delete(Movie entity)
         {
             var count = InMemoryDb.Movies.Count;
-            var мовие = InMemoryDb.Movies.Remove(entity);
+            InMemoryDb.Movies.Remove(entity);
             return count - InMemoryDb.Movies.Count;
 
         }
