@@ -1,15 +1,10 @@
 ﻿using SEDC.WebApi.MovieManager.DataModels.Enums;
 using SEDC.WebApi.MovieManager.DataModels.Models;
 using SEDC.WebApi.MovieManager.ServiceModels.MovieModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SEDC.WebApi.MovieManager.Common.MappingHelpers
 {
-    public static class Mapper
+    public static class MovieMapper
     {
         public static MovieDto Map(this Movie movie)
         {
@@ -23,16 +18,17 @@ namespace SEDC.WebApi.MovieManager.Common.MappingHelpers
             };
         }
 
-        //public static MovieDto Map(this MovieDto movieDto)
-        //{
-        //    return new Movie
-        //    {
-        //        Id = movieDto.Id,
-        //        Title = movieDto.Title,
-        //        Description = movieDto.Description,
-        //        Year = movieDto.Year,
-        //        Genre = movieDto.(Genre)Genre,
-        //    };
-        //}
+        public static Movie Map(this MovieDto movieDto)
+        {
+            var isValidGenre = Enum.TryParse(movieDto.Genre, out Genre parsedGenre);
+            return new Movie
+            {
+                Id = movieDto.Id,
+                Title = movieDto.Title,
+                Description = movieDto.Description,
+                Year = movieDto.Year,
+                Genre = parsedGenre
+            };
+        }
     }
 }

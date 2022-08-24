@@ -82,10 +82,18 @@ namespace SEDC.WebApi.MovieManager.App.Controllers
             }
         }
 
-        //public ActionResult Add()
-        //{
+        public ActionResult Add([FromBody] CreateMovieDto createMovieDto)
+        {
+            try
+            {
+                _movieService.Insert(createMovieDto);
+            }
+            catch (Exception)
+            {
 
-        //}
+                throw;
+            }
+        }
 
         //public ActionResult Update()
         //{
@@ -93,7 +101,7 @@ namespace SEDC.WebApi.MovieManager.App.Controllers
         //}
 
         [HttpDelete("{id}")]
-        public ActionResult Delete([FromRoute] int id)
+        public ActionResult Delete(int id)
         {
             try
             {

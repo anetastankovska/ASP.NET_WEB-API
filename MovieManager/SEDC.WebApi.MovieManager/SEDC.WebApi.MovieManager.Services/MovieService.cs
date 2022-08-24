@@ -1,4 +1,5 @@
-﻿using SEDC.WebApi.MovieManager.Common.MappingHelpers;
+﻿using AutoMapper;
+using SEDC.WebApi.MovieManager.Common.MappingHelpers;
 using SEDC.WebApi.MovieManager.DataAccess;
 using SEDC.WebApi.MovieManager.DataModels.Enums;
 using SEDC.WebApi.MovieManager.DataModels.Models;
@@ -15,10 +16,12 @@ namespace SEDC.WebApi.MovieManager.Services
     public class MovieService : IMovieService
     {
         private readonly IRepository<Movie> _movierepository;
+        private readonly IMapper _mapper;
 
-        public MovieService(IRepository<Movie> movierepository)
+        public MovieService(IRepository<Movie> movierepository, IMapper mapper)
         {
             _movierepository = movierepository;
+            _mapper = mapper;
         }
 
         public IEnumerable<MovieDto> GetAll()
@@ -36,19 +39,21 @@ namespace SEDC.WebApi.MovieManager.Services
             return movie.Map();
         }
 
-        public int Insert(CreateMovieDto entity)
+        public void Insert(CreateMovieDto entity)
         {
+            var isValidEnum = Enum.TryParse(entity.Genre, out Genre parsedGenre);
             var movie = new Movie
             {
                 Id = _movierepository.GetAll().Count() + 1,
                 Title = entity.Title,
                 Description = entity.Description,
                 Year = entity.Year,
-                Genre = entity.Genre as Genre
+                Genre = parsedGenre
             };
+            _movierepository.Insert(movie);
         }
 
-        public int Update(MovieDto entity)
+        public void Update(MovieDto entity)
         {
             throw new NotImplementedException();
         }
@@ -72,13 +77,21 @@ namespace SEDC.WebApi.MovieManager.Services
             return moviedtos.Where(filter);
         }
 
-        //public IEnumerable<MovieDto> GetByGenre(string genre)
-        //{
-        //    var isparsedGenre = Enum.TryParse(nameof(Genre), out Genre parsedGenre);
-        //    //var movies = _movierepository.GetAll().Where(x => x.Genre == genre);
-        //    //return movies.Select(x => x.Map());
+        public void Update(UpdateMovieDto entity)
+        {
+            throw new NotImplementedException();
+        }
 
-        //    return _movierepository.FilterBy(x => x.Genre == parsedGenre).Select(movie => movie.Map());
-        //}
+        public IEnumerable<MovieDto> GetByGenre(string genre)
+        {
+            var isparsedGenre = Enum.TryParse(nameof(Genre), out Genre parsedGenre);
+            //var movies = _movierepository.FilterBy(x => x.Genre.ToString() == genre).Select(movie => movie.Map());
+            var movies = _movierepository.FilterBy(x => x.Genre == parsedGenre).Select(movie => movie.Map());
+            if (!movies.Any())
+            {
+                throw new Exception($"No movies found for the genre {genre} or the genre {genre} does not exist.");
+            }
+            return movies;
+        }
     }
 }

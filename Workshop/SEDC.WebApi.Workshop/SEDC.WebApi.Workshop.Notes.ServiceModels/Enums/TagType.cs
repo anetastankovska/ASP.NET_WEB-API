@@ -10,7 +10,7 @@ namespace SEDC.WebApi.Workshop.Notes.ServiceModels.Enums
     {
         Work = 1,
         Education = 2,
-        Home = 3,
+        Home = 3, 
         Misc = 4,
         Other = 5
     }

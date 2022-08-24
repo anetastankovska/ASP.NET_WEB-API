@@ -13,3 +13,9 @@ C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.W
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataAccess\obj\Debug\net6.0\refint\SEDC.WebApi.Workshop.Notes.DataAccess.dll
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataAccess\obj\Debug\net6.0\SEDC.WebApi.Workshop.Notes.DataAccess.pdb
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataAccess\obj\Debug\net6.0\ref\SEDC.WebApi.Workshop.Notes.DataAccess.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataAccess\bin\Debug\net6.0\SEDC.WebApi.Workshop.Notes.DataAccess.runtimeconfig.json
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataAccess\bin\Debug\net6.0\SEDC.WebApi.Workshop.Notes.Common.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataAccess\bin\Debug\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataAccess\bin\Debug\net6.0\SEDC.WebApi.Workshop.Notes.Common.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataAccess\bin\Debug\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataAccess\obj\Debug\net6.0\SEDC.WebApi.Workshop.Notes.DataAccess.genruntimeconfig.cache
