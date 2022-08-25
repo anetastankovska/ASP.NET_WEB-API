@@ -82,16 +82,17 @@ namespace SEDC.WebApi.MovieManager.App.Controllers
             }
         }
 
-        public ActionResult Add([FromBody] CreateMovieDto createMovieDto)
+        [HttpPost("add")]
+        public ActionResult Add(CreateMovieDto createMovieDto)
         {
             try
             {
                 _movieService.Insert(createMovieDto);
+                return Ok();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                return BadRequest(ex.Message);
             }
         }
 

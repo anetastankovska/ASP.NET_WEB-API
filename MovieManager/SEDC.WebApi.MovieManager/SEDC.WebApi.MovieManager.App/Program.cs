@@ -9,7 +9,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.RegisterDataDependencies().RegisterServicesDependencies();
+builder.Services
+    .RegisterDataDependencies()
+    .RegisterServicesDependencies()
+    .RegisterAutoMapperDependencies();
+
 
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllersWithViews();

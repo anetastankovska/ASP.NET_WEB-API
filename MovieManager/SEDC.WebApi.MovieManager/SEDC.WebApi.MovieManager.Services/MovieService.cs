@@ -26,7 +26,7 @@ namespace SEDC.WebApi.MovieManager.Services
 
         public IEnumerable<MovieDto> GetAll()
         {
-            return _movierepository.GetAll().Select(x => x.Map()).ToList();
+            return _movierepository.GetAll().Select(_mapper.Map<Movie, MovieDto>);
         }
 
         public MovieDto GetById(int id)
@@ -73,7 +73,7 @@ namespace SEDC.WebApi.MovieManager.Services
 
         public IEnumerable<MovieDto> FilterBy(Func<MovieDto, bool> filter)
         {
-            var moviedtos = _movierepository.GetAll().Select(x => x.Map());
+            var moviedtos = _movierepository.GetAll().Select(_mapper.Map<Movie, MovieDto>);
             return moviedtos.Where(filter);
         }
 
@@ -86,7 +86,7 @@ namespace SEDC.WebApi.MovieManager.Services
         {
             var isparsedGenre = Enum.TryParse(nameof(Genre), out Genre parsedGenre);
             //var movies = _movierepository.FilterBy(x => x.Genre.ToString() == genre).Select(movie => movie.Map());
-            var movies = _movierepository.FilterBy(x => x.Genre == parsedGenre).Select(movie => movie.Map());
+            var movies = _movierepository.FilterBy(x => x.Genre == parsedGenre).Select(_mapper.Map<Movie, MovieDto>);
             if (!movies.Any())
             {
                 throw new Exception($"No movies found for the genre {genre} or the genre {genre} does not exist.");

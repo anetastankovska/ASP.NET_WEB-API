@@ -13,6 +13,7 @@ namespace SEDC.WebApi.MovieManager.DataAccess.Repositories
         {
             return InMemoryDb.Movies.FirstOrDefault(x => x.Id == id);
         }
+
         public IEnumerable<Movie> FilterBy(Func<Movie, bool> filter)
         {
             return InMemoryDb.Movies.Where(filter);
@@ -20,8 +21,9 @@ namespace SEDC.WebApi.MovieManager.DataAccess.Repositories
 
         public int Insert(Movie entity)
         {
+            var count = InMemoryDb.Movies.Count;
             InMemoryDb.Movies.Add(entity);
-            return InMemoryDb.Movies.Count;
+            return InMemoryDb.Movies.Count - count;
         }
 
         public int Update(Movie entity)
@@ -31,8 +33,9 @@ namespace SEDC.WebApi.MovieManager.DataAccess.Repositories
 
         public int Delete(Movie entity)
         {
+            var count = InMemoryDb.Movies.Count;
             InMemoryDb.Movies.Remove(entity);
-            return InMemoryDb.Movies.Count;
+            return InMemoryDb.Movies.Count - count;
         }
 
     }
