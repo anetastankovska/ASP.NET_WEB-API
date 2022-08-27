@@ -5,11 +5,6 @@ using SEDC.WebApi.MovieManager.DataModels.Enums;
 using SEDC.WebApi.MovieManager.DataModels.Models;
 using SEDC.WebApi.MovieManager.ServiceModels.MovieModels;
 using SEDC.WebApi.MovieManager.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SEDC.WebApi.MovieManager.Services
 {

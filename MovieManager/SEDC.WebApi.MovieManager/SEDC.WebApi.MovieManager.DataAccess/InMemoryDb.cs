@@ -1,10 +1,5 @@
 ﻿using SEDC.WebApi.MovieManager.DataModels.Enums;
 using SEDC.WebApi.MovieManager.DataModels.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SEDC.WebApi.MovieManager.DataAccess
 {
@@ -147,6 +142,33 @@ namespace SEDC.WebApi.MovieManager.DataAccess
                 Description = "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
                 Year = 2008,
                 Genre = Genre.Adventure
+            },
+        };
+        public static List<User> Users { get; set; } = new List<User>
+        {
+            new User()
+            {
+                Id = 1,
+                Password = "12345",
+                Username = "astankovska",
+                FirstName = "Aneta",
+                LastName = "Stankovska",
+                Movies = new List<Movie>
+                {
+                    Movies[0], Movies[5], Movies[7], Movies[10], Movies[14]
+                }
+            },
+            new User()
+            {
+                Id = 2,
+                Password = "54321",
+                Username = "bbobsky",
+                FirstName = "Bob",
+                LastName = "Bobsky",
+                Movies = new List<Movie>
+                {
+                    Movies[3], Movies[8], Movies[11], Movies[13], Movies[15]
+                }
             },
         };
     }
