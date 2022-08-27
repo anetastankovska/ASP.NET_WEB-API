@@ -37,6 +37,5 @@ namespace SEDC.WebApi.MovieManager.DataAccess.Repositories
             InMemoryDb.Movies.Remove(entity);
             return InMemoryDb.Movies.Count - count;
         }
-
     }
 }

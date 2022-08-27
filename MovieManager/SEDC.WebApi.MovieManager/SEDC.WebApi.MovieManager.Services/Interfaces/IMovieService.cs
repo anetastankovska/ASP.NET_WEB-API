@@ -16,5 +16,6 @@ namespace SEDC.WebApi.MovieManager.Services.Interfaces
         public void Update(UpdateMovieDto entity);
         public void Delete(int id);
         public IEnumerable<MovieDto> FilterBy(Func<MovieDto, bool> filter);
+        public IEnumerable<MovieDto> GetByUser(int userId);
     }
 }

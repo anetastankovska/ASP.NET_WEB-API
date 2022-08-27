@@ -13,7 +13,8 @@ namespace SEDC.WebApi.MovieManager.DataAccess
                 Title = "Top Gun",
                 Description = "As students at the United States Navy's elite fighter weapons school compete to be best in the class, one daring young pilot learns a few things from a civilian instructor that are not taught in the classroom.",
                 Year = 1986,
-                Genre = Genre.Action
+                Genre = Genre.Action,
+                UserId = 1
             },
             new Movie
             {
@@ -37,7 +38,8 @@ namespace SEDC.WebApi.MovieManager.DataAccess
                 Title = "Dumb and Dumber",
                 Description = "After a woman leaves a briefcase at the airport terminal, a dumb limo driver and his dumber friend set out on a hilarious cross-country road trip to Aspen.",
                 Year = 1994,
-                Genre = Genre.Comedy
+                Genre = Genre.Comedy,
+                UserId = 2
             },
             new Movie
             {
@@ -53,7 +55,8 @@ namespace SEDC.WebApi.MovieManager.DataAccess
                 Title = "Gladiator",
                 Description = "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
                 Year = 2000,
-                Genre = Genre.Drama
+                Genre = Genre.Drama, 
+                UserId = 1
             },
             new Movie
             {
@@ -69,7 +72,8 @@ namespace SEDC.WebApi.MovieManager.DataAccess
                 Title = "The Conjuring",
                 Description = "Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.",
                 Year = 1994,
-                Genre = Genre.Horror
+                Genre = Genre.Horror,
+                UserId = 1
             },
             new Movie
             {
@@ -77,7 +81,8 @@ namespace SEDC.WebApi.MovieManager.DataAccess
                 Title = "The Ring",
                 Description = "A journalist must investigate a mysterious videotape which seems to cause the death of anyone one week to the day after they view it.",
                 Year = 1994,
-                Genre = Genre.Horror
+                Genre = Genre.Horror,
+                UserId = 2
             },
             new Movie
             {
@@ -93,7 +98,8 @@ namespace SEDC.WebApi.MovieManager.DataAccess
                 Title = "Inception",
                 Description = "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
                 Year = 2010,
-                Genre = Genre.ScienceFiction
+                Genre = Genre.ScienceFiction,
+                UserId = 1
             },
             new Movie
             {
@@ -101,7 +107,8 @@ namespace SEDC.WebApi.MovieManager.DataAccess
                 Title = "Shutter Island",
                 Description = "In 1954, a U.S. Marshal investigates the disappearance of a murderer who escaped from a hospital for the criminally insane.",
                 Year = 2010,
-                Genre = Genre.Thriller
+                Genre = Genre.Thriller,
+                UserId = 2
             },
             new Movie
             {
@@ -117,7 +124,8 @@ namespace SEDC.WebApi.MovieManager.DataAccess
                 Title = "Memento",
                 Description = "A man with short-term memory loss attempts to track down his wife's murderer.",
                 Year = 2000,
-                Genre = Genre.Thriller
+                Genre = Genre.Thriller,
+                UserId = 2
             },
             new Movie
             {
@@ -125,7 +133,8 @@ namespace SEDC.WebApi.MovieManager.DataAccess
                 Title = "Thor",
                 Description = "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders.",
                 Year = 2011,
-                Genre = Genre.Adventure
+                Genre = Genre.Adventure,
+                UserId = 1
             },
             new Movie
             {
@@ -133,7 +142,8 @@ namespace SEDC.WebApi.MovieManager.DataAccess
                 Title = "Dune",
                 Description = "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future.",
                 Year = 2021,
-                Genre = Genre.Adventure
+                Genre = Genre.Adventure,
+                UserId = 2
             },
             new Movie
             {

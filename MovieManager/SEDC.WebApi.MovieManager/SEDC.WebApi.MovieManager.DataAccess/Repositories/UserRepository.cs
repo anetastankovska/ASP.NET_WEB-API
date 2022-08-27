@@ -9,34 +9,38 @@ namespace SEDC.WebApi.MovieManager.DataAccess.Repositories
 {
     public class UserRepository : IRepository<User>
     {
-        public int Delete(User entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<User> FilterBy(Func<User, bool> filter)
-        {
-            throw new NotImplementedException();
-        }
-
         public IEnumerable<User> GetAll()
         {
-            throw new NotImplementedException();
+            return InMemoryDb.Users;
         }
 
         public User GetById(int id)
         {
-            throw new NotImplementedException();
+            return InMemoryDb.Users.FirstOrDefault(x => x.Id == id);
         }
 
         public int Insert(User entity)
         {
-            throw new NotImplementedException();
+            var count = InMemoryDb.Users.Count;
+            InMemoryDb.Users.Add(entity);
+            return InMemoryDb.Users.Count - count;
         }
 
         public int Update(User entity)
         {
             throw new NotImplementedException();
+        }
+
+        public int Delete(User entity)
+        {
+            var count = InMemoryDb.Users.Count;
+            InMemoryDb.Users.Remove(entity);
+            return InMemoryDb.Users.Count - count;
+        }
+
+        public IEnumerable<User> FilterBy(Func<User, bool> filter)
+        {
+            return InMemoryDb.Users.Where(filter);
         }
     }
 }

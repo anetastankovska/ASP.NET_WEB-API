@@ -13,6 +13,7 @@ namespace SEDC.WebApi.MovieManager.DependencyInjection
         public static IServiceCollection RegisterAutoMapperDependencies(this IServiceCollection services)
         {
             services.AddAutoMapper(typeof(MovieAutoMapper));
+            services.AddAutoMapper(typeof(UserAutoMapper));
             return services;
         }
     }

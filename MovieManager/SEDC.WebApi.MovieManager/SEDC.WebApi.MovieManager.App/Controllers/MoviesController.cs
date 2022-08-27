@@ -114,5 +114,19 @@ namespace SEDC.WebApi.MovieManager.App.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet("user/{userId}")]
+        public ActionResult GetByUser(int userId)
+        {
+            try
+            {
+                var movies = _movieService.GetByUser(userId);
+                return Ok(movies);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

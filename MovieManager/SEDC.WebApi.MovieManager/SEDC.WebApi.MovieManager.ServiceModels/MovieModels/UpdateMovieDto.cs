@@ -13,5 +13,6 @@ namespace SEDC.WebApi.MovieManager.ServiceModels.MovieModels
         public string? Description { get; set; }
         public int? Year { get; set; }
         public string? Genre { get; set; }
+        public int? UserId { get; set; }
     }
 }

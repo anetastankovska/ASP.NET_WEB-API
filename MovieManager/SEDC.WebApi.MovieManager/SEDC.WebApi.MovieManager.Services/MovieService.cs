@@ -21,7 +21,15 @@ namespace SEDC.WebApi.MovieManager.Services
 
         public IEnumerable<MovieDto> GetAll()
         {
-            return _movierepository.GetAll().Select(_mapper.Map<Movie, MovieDto>);
+            var movies = _movierepository.GetAll().Select(_mapper.Map<Movie, MovieDto>);
+            if (movies.Any())
+            {
+                return movies;
+            }
+            else
+            {
+                throw new Exception("No movies found");
+            }
         }
 
         public MovieDto GetById(int id)
@@ -37,21 +45,19 @@ namespace SEDC.WebApi.MovieManager.Services
         public void Insert(CreateMovieDto entity)
         {
             var isValidEnum = Enum.TryParse(entity.Genre, out Genre parsedGenre);
-            var movie = new Movie
-            {
-                Id = _movierepository.GetAll().Count() + 1,
-                Title = entity.Title,
-                Description = entity.Description,
-                Year = entity.Year,
-                Genre = parsedGenre
-            };
-            _movierepository.Insert(movie);
+            //var movie = new Movie
+            //{
+            //    Id = _movierepository.GetAll().Count() + 1,
+            //    Title = entity.Title,
+            //    Description = entity.Description,
+            //    Year = entity.Year,
+            //    Genre = parsedGenre
+            //};
+            //_movierepository.Insert(movie);
+
+            var movie = _movierepository.Insert(_mapper.Map<Movie>(entity));
         }
 
-        public void Update(MovieDto entity)
-        {
-            throw new NotImplementedException();
-        }
 
         public void Delete(int id)
         {
@@ -86,6 +92,12 @@ namespace SEDC.WebApi.MovieManager.Services
             {
                 throw new Exception($"No movies found for the genre {genre} or the genre {genre} does not exist.");
             }
+            return movies;
+        }
+
+        public IEnumerable<MovieDto> GetByUser(int userId)
+        {
+            var movies = _movierepository.FilterBy(x => x.UserId == userId).Select(_mapper.Map<Movie, MovieDto>);
             return movies;
         }
     }
