@@ -22,9 +22,11 @@ namespace SEDC.WebApi.Workshop.Notes.DependencyInjection
                     x.UseSqlServer(connectionString));
             }
             //services.AddTransient<IRepository<Note>, NoteRepository>();
-            services.AddTransient<IRepository<Note>, NoteFERepository>();
+            //services.AddTransient<IRepository<Note>, NoteFERepository>();
             //services.AddTransient<IRepository<User>, UserRepository>();
             services.AddTransient<IRepository<User>, UserFERepository>();
+            //services.AddTransient<IRepository<Note>, NoteAdoRepository>();
+            services.AddTransient<IRepository<Note>, NoteDapperRepository>();
 
             return services;
         }

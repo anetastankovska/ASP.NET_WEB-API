@@ -1,4 +1,5 @@
-﻿using SEDC.WebApi.Workshop.Notes.DataModels.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using SEDC.WebApi.Workshop.Notes.DataModels.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,7 @@ namespace SEDC.WebApi.Workshop.Notes.DataAccess.Repositories
 
         public IEnumerable<Note> GetAll()
         {
+            //_context.Notes.Include("User"); Reference: eager/lazy loading
             return _context.Notes;
         }
 
