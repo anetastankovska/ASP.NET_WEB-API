@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "TGKoWUIj1mMzRPX5LUJOqDK0cFSEkVre7EnlGJZrvG0mB0CAWEVjeG5qUUNUUiGywZ3Ssa/lN+7XqlOROiAOdA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\Loto3000\\Loto3000\\Loto3000.App\\Loto3000.App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aneta\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
