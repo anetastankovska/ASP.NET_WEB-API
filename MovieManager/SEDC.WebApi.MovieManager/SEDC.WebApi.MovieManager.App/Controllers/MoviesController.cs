@@ -96,10 +96,19 @@ namespace SEDC.WebApi.MovieManager.App.Controllers
             }
         }
 
-        //public ActionResult Update()
-        //{
-
-        //}
+        [HttpPatch("edit/{id}")]
+        public ActionResult Update(int id, [FromBody] UpdateMovieDto updateMovie)
+        {
+            try
+            {
+                _movieService.Update(updateMovie, id);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)

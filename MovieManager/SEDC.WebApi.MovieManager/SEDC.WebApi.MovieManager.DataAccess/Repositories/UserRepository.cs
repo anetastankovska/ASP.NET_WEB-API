@@ -42,5 +42,13 @@ namespace SEDC.WebApi.MovieManager.DataAccess.Repositories
         {
             return InMemoryDb.Users.Where(filter);
         }
+
+        public int Delete(int id)
+        {
+            var count = InMemoryDb.Users.Count;
+            var user = InMemoryDb.Users.FirstOrDefault(x => x.Id == id);
+            InMemoryDb.Users.Remove(user);
+            return InMemoryDb.Users.Count - count;
+        }
     }
 }

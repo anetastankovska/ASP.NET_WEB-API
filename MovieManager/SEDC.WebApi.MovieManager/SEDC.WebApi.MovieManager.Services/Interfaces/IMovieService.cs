@@ -13,7 +13,7 @@ namespace SEDC.WebApi.MovieManager.Services.Interfaces
         public IEnumerable<MovieDto> GetAll();
         public MovieDto GetById(int id);
         public void Insert(CreateMovieDto entity);
-        public void Update(UpdateMovieDto entity);
+        public void Update(UpdateMovieDto entity, int id);
         public void Delete(int id);
         public IEnumerable<MovieDto> FilterBy(Func<MovieDto, bool> filter);
         public IEnumerable<MovieDto> GetByUser(int userId);

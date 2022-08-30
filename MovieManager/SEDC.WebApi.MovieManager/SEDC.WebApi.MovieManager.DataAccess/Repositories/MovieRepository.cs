@@ -22,19 +22,42 @@ namespace SEDC.WebApi.MovieManager.DataAccess.Repositories
         public int Insert(Movie entity)
         {
             var count = InMemoryDb.Movies.Count;
-            InMemoryDb.Movies.Add(entity);
-            return InMemoryDb.Movies.Count - count;
+            if(entity != null)
+            {
+                InMemoryDb.Movies.Add(entity);
+                return InMemoryDb.Movies.Count - count;
+            }
+            else
+            {
+                throw new Exception("The movie could not be added");
+            };
         }
 
         public int Update(Movie entity)
         {
-            throw new NotImplementedException();
+            var movie = InMemoryDb.Movies.FirstOrDefault(x => x.Id == entity.Id);
+            movie.Title = entity.Title;
+            movie.Year = entity.Year;
+            movie.Description = entity.Description;
+            movie.Genre = entity.Genre;
+            movie.User = entity.User;
+            movie.UserId = entity.UserId;
+            
+            return InMemoryDb.Movies.Count;
         }
 
-        public int Delete(Movie entity)
+        public int Delete(int id)
         {
             var count = InMemoryDb.Movies.Count;
-            InMemoryDb.Movies.Remove(entity);
+            var movie = GetById(id);
+            if(movie != null)
+            {
+                InMemoryDb.Movies.Remove(movie);
+            }
+            else
+            {
+                throw new Exception("No movie with such id found!");
+            }
             return InMemoryDb.Movies.Count - count;
         }
     }

@@ -10,7 +10,7 @@ namespace SEDC.WebApi.MovieManager.DataAccess.GenericRepository
 {
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
-        public int Delete(T entity)
+        public int Delete(int id)
         {
             throw new NotImplementedException();
         }

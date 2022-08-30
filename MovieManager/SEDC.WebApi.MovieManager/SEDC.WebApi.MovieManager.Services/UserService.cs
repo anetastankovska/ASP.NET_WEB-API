@@ -52,7 +52,7 @@ namespace SEDC.WebApi.MovieManager.Services
             var userTodelete = _userReporitory.GetAll().FirstOrDefault(x => x.Id == id);
             if (userTodelete != null)
             {
-                _userReporitory.Delete(userTodelete);
+                _userReporitory.Delete(id);
             }
             else
             {

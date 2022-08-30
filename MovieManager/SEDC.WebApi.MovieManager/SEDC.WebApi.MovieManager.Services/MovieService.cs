@@ -61,26 +61,13 @@ namespace SEDC.WebApi.MovieManager.Services
 
         public void Delete(int id)
         {
-            var movieTodelete = _movierepository.GetAll().FirstOrDefault(x => x.Id == id);
-            if (movieTodelete != null)
-            {
-                _movierepository.Delete(movieTodelete);
-            }
-            else
-            {
-                throw new Exception("The movie cannot be found");         
-            }
+            var movieToDelete = _movierepository.Delete(id);
         }
 
         public IEnumerable<MovieDto> FilterBy(Func<MovieDto, bool> filter)
         {
             var moviedtos = _movierepository.GetAll().Select(_mapper.Map<Movie, MovieDto>);
             return moviedtos.Where(filter);
-        }
-
-        public void Update(UpdateMovieDto entity)
-        {
-            throw new NotImplementedException();
         }
 
         public IEnumerable<MovieDto> GetByGenre(string genre)
@@ -99,6 +86,11 @@ namespace SEDC.WebApi.MovieManager.Services
         {
             var movies = _movierepository.FilterBy(x => x.UserId == userId).Select(_mapper.Map<Movie, MovieDto>);
             return movies;
+        }
+
+        public void Update(UpdateMovieDto entity, int id)
+        {
+            var movie = _movierepository.Update(_mapper.Map<Movie>(entity));
         }
     }
 }
