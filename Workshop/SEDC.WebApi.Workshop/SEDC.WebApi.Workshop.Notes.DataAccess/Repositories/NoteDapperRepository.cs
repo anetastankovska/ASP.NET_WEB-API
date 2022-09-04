@@ -2,12 +2,7 @@
 using Microsoft.Extensions.Options;
 using SEDC.WebApi.Workshop.Notes.Common.Models;
 using SEDC.WebApi.Workshop.Notes.DataModels.Models;
-using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SEDC.WebApi.Workshop.Notes.DataAccess.Repositories
 {

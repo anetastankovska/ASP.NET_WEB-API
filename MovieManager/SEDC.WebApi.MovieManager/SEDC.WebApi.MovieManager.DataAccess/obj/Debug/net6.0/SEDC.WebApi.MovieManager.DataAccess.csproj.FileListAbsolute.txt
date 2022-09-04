@@ -13,3 +13,5 @@ C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManage
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\refint\SEDC.WebApi.MovieManager.DataAccess.dll
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.pdb
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\ref\SEDC.WebApi.MovieManager.DataAccess.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\bin\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.runtimeconfig.json
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\MovieManager\SEDC.WebApi.MovieManager\SEDC.WebApi.MovieManager.DataAccess\obj\Debug\net6.0\SEDC.WebApi.MovieManager.DataAccess.genruntimeconfig.cache
