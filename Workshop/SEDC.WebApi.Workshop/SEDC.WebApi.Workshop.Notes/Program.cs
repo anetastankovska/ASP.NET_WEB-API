@@ -1,5 +1,8 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using SEDC.WebApi.Workshop.Notes.Common.Models;
 using SEDC.WebApi.Workshop.Notes.DependencyInjection;
+using System.Text;
 
 namespace SEDC.WebApi.Workshop.Notes
 {
@@ -29,6 +32,25 @@ namespace SEDC.WebApi.Workshop.Notes
                 .RegisterServicesDependencies();
             builder.Services.AddControllers();
 
+            var secret = Encoding.ASCII.GetBytes(appSettings.Secret);
+            builder.Services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }
+            ).AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(secret),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -37,8 +59,8 @@ namespace SEDC.WebApi.Workshop.Notes
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-            
 
+            app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
 

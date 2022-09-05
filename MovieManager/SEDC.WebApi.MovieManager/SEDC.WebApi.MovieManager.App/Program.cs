@@ -9,8 +9,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// take from setings
+var connectionString = "Server=DESKTOP-U613IMF;Database=MoviesDb;Trusted_Connection=True";
+
 builder.Services
-    .RegisterDataDependencies()
+    .RegisterDataDependencies(connectionString)
     .RegisterServicesDependencies()
     .RegisterAutoMapperDependencies();
 

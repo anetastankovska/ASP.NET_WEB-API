@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SEDC.WebApi.MovieManager.DataModels.Enums;
 using SEDC.WebApi.MovieManager.DataModels.Models;
+using System.Diagnostics;
 using System.Text;
 using XSystem.Security.Cryptography;
 
@@ -14,6 +15,7 @@ namespace SEDC.WebApi.MovieManager.DataAccess
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Debugger.Launch();
             modelBuilder
                 .Entity<User>()
                 .ToTable(nameof(User))
@@ -131,6 +133,7 @@ namespace SEDC.WebApi.MovieManager.DataAccess
                     Genre = Genre.Adventure
                 });
 
+            base.OnModelCreating(modelBuilder);
         }
     } 
 }

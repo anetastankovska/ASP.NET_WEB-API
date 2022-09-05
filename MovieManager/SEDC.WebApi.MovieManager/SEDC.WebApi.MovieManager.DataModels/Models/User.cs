@@ -13,6 +13,5 @@ namespace SEDC.WebApi.MovieManager.DataModels.Models
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public IEnumerable<Movie>? Movies { get; set; }
-        public IEnumerable<int>? MovieIds  { get; set; }
     }
 }

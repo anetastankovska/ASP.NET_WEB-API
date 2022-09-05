@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SEDC.WebApi.Workshop.Notes.ServiceModels.NotesModels;
 using SEDC.WebApi.Workshop.Notes.Services.Interfaces;
+using System.Security.Claims;
 
 namespace SEDC.WebApi.Workshop.Notes.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/v1/[controller]")]
     public class NotesController : ControllerBase
@@ -72,6 +75,16 @@ namespace SEDC.WebApi.Workshop.Notes.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        private int GetAuthorizedUserId()
+        {
+            if (!int.TryParse(User.FindFirst(ClaimTypes.NameIdentifier)?
+                .Value, out var userId))
+            {
+                throw new Exception("Name identifier claim does not exist!");
+            }
+            return userId;
         }
     }
 }

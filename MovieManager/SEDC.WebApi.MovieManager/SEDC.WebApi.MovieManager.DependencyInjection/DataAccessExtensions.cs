@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using SEDC.WebApi.MovieManager.DataAccess;
 using SEDC.WebApi.MovieManager.DataAccess.Repositories;
 using SEDC.WebApi.MovieManager.DataModels.Models;
@@ -12,8 +13,13 @@ namespace SEDC.WebApi.MovieManager.DependencyInjection
 {
     public static class DataAccessExtensions
     {
-        public static IServiceCollection RegisterDataDependencies(this IServiceCollection services)
+        public static IServiceCollection RegisterDataDependencies(this IServiceCollection services, string connectionString)
         {
+            services.AddDbContext<MovieDBContext>(options =>
+            {
+                options.UseSqlServer(connectionString);
+            });
+
             services.AddTransient <IRepository<Movie>, MovieRepository>();
             return services;
         }

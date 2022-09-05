@@ -19,7 +19,6 @@ namespace SEDC.WebApi.MovieManager.Common.MappingHelpers
                 Password = user.Password,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
-                MovieIds = user.MovieIds
             };
         }
 
@@ -32,7 +31,6 @@ namespace SEDC.WebApi.MovieManager.Common.MappingHelpers
                 Password = user.Password,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
-                MovieIds = user.MovieIds
             };
         }
     }
