@@ -42,9 +42,9 @@ namespace SEDC.WebApi.Workshop.Notes.Services
                 .Select(note => note.Map());
         }
 
-        public string AddNote(CreateNote note)
+        public string AddNote(CreateNote note, int userId)
         {
-            var user = _userRepository.GetById(note.UserId);
+            var user = _userRepository.GetById(userId);
             if(user == null)
             {
                 throw new Exception("User not found");
@@ -52,7 +52,7 @@ namespace SEDC.WebApi.Workshop.Notes.Services
             var newNote = new Note
             {
                 Text = note.Text,
-                UserId = note.UserId,
+                UserId = userId,
                 Color = note.Color,
                 Tag = note.Tag
             };

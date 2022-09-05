@@ -7,7 +7,7 @@ namespace SEDC.WebApi.Workshop.Notes.Services.Interfaces
         IEnumerable<NoteDto> GetUserNotes(int userId);
         NoteDto GetNote(int id, int userId);
         NoteDto GetNote(int id, int userId, string name);
-        string AddNote(CreateNote note);
+        string AddNote(CreateNote note, int userId);
         void DeleteNote(int id, int userId);
     }
 }

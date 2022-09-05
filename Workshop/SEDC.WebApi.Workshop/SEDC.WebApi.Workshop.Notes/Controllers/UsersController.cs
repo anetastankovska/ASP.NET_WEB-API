@@ -5,10 +5,9 @@ using SEDC.WebApi.Workshop.Notes.Services.Interfaces;
 
 namespace SEDC.WebApi.Workshop.Notes.Controllers
 {
-    [Authorize]
     [ApiController]
     [Route("api/v1/controller")]
-    public class UsersController : ControllerBase
+    public class UsersController : BaseController
     {
         private readonly IUserService _userService;
         public UsersController(IUserService userServce)
