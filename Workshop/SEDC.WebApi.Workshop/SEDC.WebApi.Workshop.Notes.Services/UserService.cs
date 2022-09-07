@@ -41,7 +41,7 @@ namespace SEDC.WebApi.Workshop.Notes.Services
                 FirstName = request.FirstName,
                 LastName = request.LastName,
                 Username = request.Username,
-                Password = request.Password,
+                Password = HashPassword(request.Password),
             };
 
             _userRepository.Insert(newUser);

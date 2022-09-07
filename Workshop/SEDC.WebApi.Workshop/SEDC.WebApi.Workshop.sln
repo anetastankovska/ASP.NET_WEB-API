@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.WebApi.Workshop.Notes.DataAccess", "SEDC.WebApi.Workshop.Notes.DataAccess\SEDC.WebApi.Workshop.Notes.DataAccess.csproj", "{FB8E0BE6-7A31-4F96-A1C0-CC6455275BDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.WebApi.Workshop.Notes.DataAccess", "SEDC.WebApi.Workshop.Notes.DataAccess\SEDC.WebApi.Workshop.Notes.DataAccess.csproj", "{FB8E0BE6-7A31-4F96-A1C0-CC6455275BDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.WebApi.Workshop.Notes.Services", "SEDC.WebApi.Workshop.Notes.Services\SEDC.WebApi.Workshop.Notes.Services.csproj", "{A1FD1DA6-F5DF-4755-BBE6-D2CECFB20869}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.WebApi.Workshop.Notes.Services", "SEDC.WebApi.Workshop.Notes.Services\SEDC.WebApi.Workshop.Notes.Services.csproj", "{A1FD1DA6-F5DF-4755-BBE6-D2CECFB20869}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.WebApi.Workshop.Notes.DataModels", "SEDC.WebApi.Workshop.Notes.DataModels\SEDC.WebApi.Workshop.Notes.DataModels.csproj", "{75C41278-B14E-480D-930F-C691757808F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.WebApi.Workshop.Notes.DataModels", "SEDC.WebApi.Workshop.Notes.DataModels\SEDC.WebApi.Workshop.Notes.DataModels.csproj", "{75C41278-B14E-480D-930F-C691757808F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.WebApi.Workshop.Notes.ServiceModels", "SEDC.WebApi.Workshop.Notes.ServiceModels\SEDC.WebApi.Workshop.Notes.ServiceModels.csproj", "{C5CBE534-E01E-4B3A-809B-0F30E5EF201A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.WebApi.Workshop.Notes.ServiceModels", "SEDC.WebApi.Workshop.Notes.ServiceModels\SEDC.WebApi.Workshop.Notes.ServiceModels.csproj", "{C5CBE534-E01E-4B3A-809B-0F30E5EF201A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.WebApi.Workshop.Notes", "SEDC.WebApi.Workshop.Notes\SEDC.WebApi.Workshop.Notes.csproj", "{6E54C0AB-6044-4BE7-9399-CD8E83DE7205}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.WebApi.Workshop.Notes", "SEDC.WebApi.Workshop.Notes\SEDC.WebApi.Workshop.Notes.csproj", "{6E54C0AB-6044-4BE7-9399-CD8E83DE7205}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.WebApi.Workshop.Notes.Common", "SEDC.WebApi.Workshop.Notes.Common\SEDC.WebApi.Workshop.Notes.Common.csproj", "{32DC9CA7-B8EA-456C-AA71-C4B749F8708D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.WebApi.Workshop.Notes.Common", "SEDC.WebApi.Workshop.Notes.Common\SEDC.WebApi.Workshop.Notes.Common.csproj", "{32DC9CA7-B8EA-456C-AA71-C4B749F8708D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.WebApi.Workshop.Notes.DependencyInjection", "SEDC.WebApi.Workshop.Notes.DependencyInjection\SEDC.WebApi.Workshop.Notes.DependencyInjection.csproj", "{9FE6CC3E-C919-48EA-B74E-87DDA4823324}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.WebApi.Workshop.Notes.DependencyInjection", "SEDC.WebApi.Workshop.Notes.DependencyInjection\SEDC.WebApi.Workshop.Notes.DependencyInjection.csproj", "{9FE6CC3E-C919-48EA-B74E-87DDA4823324}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.WebApi.Workshop.Notes.Tests", "SEDC.WebApi.Workshop.Notes.Tests\SEDC.WebApi.Workshop.Notes.Tests.csproj", "{6DC5A556-4805-4A18-A594-23A6D8906AEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{9FE6CC3E-C919-48EA-B74E-87DDA4823324}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FE6CC3E-C919-48EA-B74E-87DDA4823324}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FE6CC3E-C919-48EA-B74E-87DDA4823324}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DC5A556-4805-4A18-A594-23A6D8906AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DC5A556-4805-4A18-A594-23A6D8906AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DC5A556-4805-4A18-A594-23A6D8906AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DC5A556-4805-4A18-A594-23A6D8906AEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
