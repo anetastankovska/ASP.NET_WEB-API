@@ -1,0 +1,15 @@
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\bin\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.exe
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\bin\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.deps.json
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\bin\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.runtimeconfig.json
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\bin\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\bin\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\obj\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.csproj.AssemblyReference.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\obj\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\obj\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.AssemblyInfoInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\obj\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.AssemblyInfo.cs
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\obj\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.csproj.CoreCompileInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\obj\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\obj\Debug\net6.0\refint\SEDC.WebApi.Workshop.Notes.PerformanceChecker.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\obj\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\obj\Debug\net6.0\SEDC.WebApi.Workshop.Notes.PerformanceChecker.genruntimeconfig.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.PerformanceChecker\obj\Debug\net6.0\ref\SEDC.WebApi.Workshop.Notes.PerformanceChecker.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3iz5BvX+w6JEJqZad7AYuJ5Yv3G1jmSef/xJyoDuu6ZV5Ed0cFEeOORs2vjyoAmLDKzAGVoLHbkgW890uz/eUw==",
+  "dgSpecHash": "zZmgXAqdu+X0+oTukhLsCWPToYQkMvTaIVAVpyBbyjfnbReYwXZFwXXdMBb6B3FY0+QBV9g19f1yGVEuycwD2g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Aneta\\Desktop\\SEDC\\ASP.NET_WEB-API\\Workshop\\SEDC.WebApi.Workshop\\SEDC.WebApi.Workshop.Notes.Services\\SEDC.WebApi.Workshop.Notes.Services.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,7 @@
     "C:\\Users\\Aneta\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Aneta\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Aneta\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Aneta\\.nuget\\packages\\serilog\\2.11.0\\serilog.2.11.0.nupkg.sha512",
     "C:\\Users\\Aneta\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Aneta\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\Aneta\\.nuget\\packages\\system.data.sqlclient\\4.8.3\\system.data.sqlclient.4.8.3.nupkg.sha512",

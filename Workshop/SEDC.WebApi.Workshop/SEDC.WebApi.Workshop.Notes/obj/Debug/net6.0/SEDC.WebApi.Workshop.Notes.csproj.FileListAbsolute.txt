@@ -80,3 +80,13 @@ C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.W
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Dapper.dll
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Serilog.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Serilog.AspNetCore.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Serilog.Settings.Configuration.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Serilog.Sinks.File.dll

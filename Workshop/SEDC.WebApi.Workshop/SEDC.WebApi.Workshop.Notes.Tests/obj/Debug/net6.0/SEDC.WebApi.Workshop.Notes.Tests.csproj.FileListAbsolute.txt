@@ -162,3 +162,4 @@ C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.W
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Tests\obj\Debug\net6.0\ref\SEDC.WebApi.Workshop.Notes.Tests.dll
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Tests\bin\Debug\net6.0\Microsoft.Practices.ServiceLocation.dll
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Tests\bin\Debug\net6.0\XAct.Core.PCL.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Tests\bin\Debug\net6.0\Serilog.dll

@@ -6,6 +6,7 @@ using SEDC.WebApi.Workshop.Notes.Services.Interfaces;
 
 namespace SEDC.WebApi.Workshop.Notes.Services
 {
+
     public class NoteService : INoteService
     {
         private readonly IRepository<Note> _noteRepository;

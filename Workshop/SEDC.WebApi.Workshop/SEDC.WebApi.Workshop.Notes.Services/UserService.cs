@@ -10,6 +10,9 @@ using SEDC.WebApi.Workshop.Notes.Common.Models;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
+using SEDC.WebApi.Workshop.Notes.Common.Helpers;
+using System.Diagnostics;
+using Serilog;
 
 namespace SEDC.WebApi.Workshop.Notes.Services
 {
@@ -44,11 +47,22 @@ namespace SEDC.WebApi.Workshop.Notes.Services
                 Password = HashPassword(request.Password),
             };
 
-            _userRepository.Insert(newUser);
+            try
+            {
+                _userRepository.Insert(newUser);
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex.Message);
+                throw new Exception("Error connecting to database");
+            }
+            Log.Information($"User created with username {request.Username}");
         }
 
         public UserLoginDto Login(LoginModel request)
         {
+            var sw = new Stopwatch();
+
             var user = _userRepository
                         .GetAll()
                         .FirstOrDefault(u => u.Username.Equals(request.Username, StringComparison.CurrentCultureIgnoreCase));
@@ -60,8 +74,11 @@ namespace SEDC.WebApi.Workshop.Notes.Services
             var hashedPassword = HashPassword(request.Password);
             if(user.Password != hashedPassword)
             {
+                Log.Warning($"User {request.Username} tried to log in with wrong password");
                 throw new Exception("Password is not valid");
             }
+            sw.Stop();
+            Log.Debug($"User validation ended in {sw.ElapsedMilliseconds}");
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding
