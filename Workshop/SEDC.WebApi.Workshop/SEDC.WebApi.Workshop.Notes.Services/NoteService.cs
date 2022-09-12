@@ -1,4 +1,5 @@
-﻿using SEDC.WebApi.Workshop.Notes.Common.MappingHelpers;
+﻿using SEDC.WebApi.Workshop.Notes.Common.Exceptions;
+using SEDC.WebApi.Workshop.Notes.Common.MappingHelpers;
 using SEDC.WebApi.Workshop.Notes.DataAccess;
 using SEDC.WebApi.Workshop.Notes.DataModels.Models;
 using SEDC.WebApi.Workshop.Notes.ServiceModels.NotesModels;
@@ -10,47 +11,25 @@ namespace SEDC.WebApi.Workshop.Notes.Services
     public class NoteService : INoteService
     {
         private readonly IRepository<Note> _noteRepository;
-        private readonly IRepository<User> _userRepository;
+        private readonly IRepository<User> _userRepositry;
 
-        public NoteService(IRepository<Note> noteRepository, IRepository<User> userRepository)
+        public NoteService(IRepository<Note> noteRepository,
+            IRepository<User> userRepositry)
         {
-           _noteRepository = noteRepository;
-            _userRepository = userRepository;
-        }
-        public NoteDto GetNote(int id, int userId)
-        {
-            var note = _noteRepository
-                .FilterBy(x => x.Id == id && x.UserId == userId)
-                .FirstOrDefault();
-
-            if(note == null)
-            {
-                throw new Exception("Note not found");
-            }
-
-            return note.Map();
-        }
-
-        public NoteDto GetNote(int id, int userId, string name)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<NoteDto> GetUserNotes(int userId)
-        {
-            return _noteRepository
-                .FilterBy(x => x.UserId == userId)
-                .Select(note => note.Map());
+            _noteRepository = noteRepository;
+            _userRepositry = userRepositry;
         }
 
         public string AddNote(CreateNote note, int userId)
         {
-            var user = _userRepository.GetById(userId);
-            if(user == null)
+            var user = _userRepositry.GetById(userId);
+
+            if (user == null)
             {
-                throw new Exception("User not found");
+                throw new UserException(userId, null, "User not found");
             }
-            var newNote = new Note
+
+            var newwNote = new Note
             {
                 Text = note.Text,
                 UserId = userId,
@@ -58,20 +37,46 @@ namespace SEDC.WebApi.Workshop.Notes.Services
                 Tag = note.Tag
             };
 
-            _noteRepository.Insert(newNote);
-            var url = $"http://localhost:5070/swagger/index.html{newNote.Id}/user/{newNote.UserId}";
+            _noteRepository.Insert(newwNote);
+
+            var url =
+                $"http://localhost:5277/api/v1/notes/get-all";
             return url;
         }
 
         public void DeleteNote(int id, int userId)
         {
-            var note = _noteRepository.FilterBy(x => x.Id == id && x.UserId == userId)
+            var note = _noteRepository
+                .FilterBy(x => x.Id == id && x.UserId == userId)
                 .FirstOrDefault();
-            if(note == null)
+
+            if (note == null)
             {
-                throw new Exception("Note not found");
+                throw new NoteException(id, userId, "Note not found");
             }
+
             _noteRepository.Delete(note);
+        }
+
+        public NoteDto GetNote(int id, int userId)
+        {
+            var note = _noteRepository
+                .FilterBy(x => x.Id == id && x.UserId == userId)
+                .FirstOrDefault();
+
+            if (note == null)
+            {
+                throw new NoteException(id, userId, "Note not found");
+            }
+
+            return note.Map();
+        }
+
+        public IEnumerable<NoteDto> GetUserNotes(int userId)
+        {
+            return _noteRepository
+                .FilterBy(x => x.UserId == userId)
+                .Select(note => note.Map());
         }
     }
 }

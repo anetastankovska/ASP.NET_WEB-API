@@ -13,6 +13,7 @@ using System.Security.Claims;
 using SEDC.WebApi.Workshop.Notes.Common.Helpers;
 using System.Diagnostics;
 using Serilog;
+using SEDC.WebApi.Workshop.Notes.Common.Exceptions;
 
 namespace SEDC.WebApi.Workshop.Notes.Services
 {
@@ -20,23 +21,44 @@ namespace SEDC.WebApi.Workshop.Notes.Services
     {
         private readonly IRepository<User> _userRepository;
         private readonly string _secret;
-        public UserService(IRepository<User> userRepository, IOptions<AppSettings> options)
+
+        public UserService(IRepository<User> userRepository,
+            IOptions<AppSettings> options)
         {
             _userRepository = userRepository;
             _secret = options.Value.Secret;
         }
+
         public void Register(RegisterUser request)
         {
-            var user = _userRepository
-                .GetAll()
-                .FirstOrDefault(u => u.Username.Equals(request.Username, StringComparison.CurrentCultureIgnoreCase));
-            if(user != null)
+            User user = null;
+            try
             {
-                throw new Exception("USername already exists");
+                user = _userRepository
+               .GetAll()
+               .FirstOrDefault(u => u.Username.Equals(request.Username,
+                       StringComparison.InvariantCultureIgnoreCase));
+
             }
+            catch (Exception ex)
+            {
+                Log.Error(ex.Message);
+                throw new UserException(null, request.FirstName, ex.Message);
+            }
+
+
+            if (user != null)
+            {
+                throw new UserException(user.Id,
+                    $"{user.FirstName} {user.LastName}",
+                    "User already exists");
+            }
+
             if (!IsValidPassword(request.Password))
             {
-                throw new Exception("Password not valid");
+                throw new UserException(null,
+                    request.Username,
+                    "Password is not valid");
             }
 
             var newUser = new User
@@ -44,17 +66,20 @@ namespace SEDC.WebApi.Workshop.Notes.Services
                 FirstName = request.FirstName,
                 LastName = request.LastName,
                 Username = request.Username,
-                Password = HashPassword(request.Password),
+                Password = HashPassword(request.Password)
             };
 
             try
             {
                 _userRepository.Insert(newUser);
+
             }
             catch (Exception ex)
             {
                 Log.Error(ex.Message);
-                throw new Exception("Error connecting to database");
+                throw new UserException(null,
+                    request.Username,
+                    "Error connecting to Database");
             }
             Log.Information($"User created with username {request.Username}");
         }
@@ -62,42 +87,45 @@ namespace SEDC.WebApi.Workshop.Notes.Services
         public UserLoginDto Login(LoginModel request)
         {
             var sw = new Stopwatch();
-
+            sw.Start();
             var user = _userRepository
-                        .GetAll()
-                        .FirstOrDefault(u => u.Username.Equals(request.Username, StringComparison.CurrentCultureIgnoreCase));
-            if(user == null)
+                .GetAll()
+                .FirstOrDefault(u => u.Username.Equals(request.Username,
+                                StringComparison.InvariantCultureIgnoreCase));
+
+            if (user == null)
             {
-                throw new Exception("The username does not exists");
+                throw new UserException(null, null,
+                    "User with that username does not exists");
             }
 
             var hashedPassword = HashPassword(request.Password);
-            if(user.Password != hashedPassword)
+            if (user.Password != hashedPassword)
             {
                 Log.Warning($"User {request.Username} tried to log in with wrong password");
-                throw new Exception("Password is not valid");
+                throw new UserException(user.Id,
+                    user.Username,
+                    "Password is not valid");
             }
             sw.Stop();
             Log.Debug($"User validation ended in {sw.ElapsedMilliseconds}");
 
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding
-                .ASCII
-                .GetBytes(_secret);
+            var key = Encoding.ASCII.GetBytes(_secret);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new System.Security.Claims.ClaimsIdentity(
                     new[]
                     {
                         new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}"),
-                        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+                        new Claim(ClaimTypes.NameIdentifier, user.Id.ToString())
                     }
                     ),
                 Expires = DateTime.UtcNow.AddDays(7),
                 SigningCredentials = new SigningCredentials(
-                    new SymmetricSecurityKey(key),
-                    SecurityAlgorithms.HmacSha256Signature)
+                        new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
+
             var token = tokenHandler.CreateToken(tokenDescriptor);
 
             var login = new UserLoginDto
@@ -123,7 +151,5 @@ namespace SEDC.WebApi.Workshop.Notes.Services
             var md5data = md5.ComputeHash(Encoding.ASCII.GetBytes(password));
             return Encoding.ASCII.GetString(md5data);
         }
-
-        
     }
 }

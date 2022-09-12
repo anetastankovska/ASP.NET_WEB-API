@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using SEDC.WebApi.Workshop.Notes.Common.Exceptions;
 using SEDC.WebApi.Workshop.Notes.Common.Models;
 using SEDC.WebApi.Workshop.Notes.DataAccess;
 using SEDC.WebApi.Workshop.Notes.DataModels.Models;
@@ -28,108 +29,108 @@ namespace SEDC.WebApi.Workshop.Notes.Tests
             _options = Options.Create<AppSettings>(new AppSettings()
             {
                 Secret = "SECRET FOR TESTING"
-            }); ;
-        }
-        [TestMethod]
-        public void Register_UsernameExists()
-        {
-            //Arange
-            var users = new List<User>
-            {
-                new User
-                {
-                    Id = 1,
-                    FirstName = "Aneta",
-                    LastName = "Stankovska",
-                    Password = "somePassword",
-                    Username = "astan"
-                }
-            };
-            _userRepository.Setup(x => x.GetAll()).Returns(users);
-
-            var request = new RegisterUser
-            {
-                Username = "astan"
-            };
-
-            var service = new UserService(_userRepository.Object, _options);
-
-            //Act
-            //Assert
-
-            Assert.ThrowsException<Exception>(() =>
-            {
-                service.Register(request);
             });
 
         }
 
         [TestMethod]
-        public void Register_PasswordNotValid()
+        public void Register_Username_Exists()
         {
-            //Arange
+            // Arange
             var users = new List<User>
             {
                 new User
                 {
-                    Id = 1,
-                    FirstName = "Aneta",
-                    LastName = "Stankovska",
+                    Id = 3,
+                    FirstName = "Trajan",
+                    LastName = "Stevkovski",
                     Password = "somePassword",
-                    Username = "astan"
+                    Username = "stevt"
                 }
             };
+
             _userRepository.Setup(x => x.GetAll()).Returns(users);
 
             var request = new RegisterUser
             {
-                Username = "astan1",
+                Username = "stevt"
+            };
+
+            var service = new UserService(_userRepository.Object, _options);
+
+            // Act
+            // Assert
+
+            Assert.ThrowsException<UserException>(() =>
+            {
+                service.Register(request);
+            });
+            // TODO: add mote asserts
+        }
+
+        [TestMethod]
+        public void Register_NotValidPassword()
+        {
+            // Arange
+            var users = new List<User>
+            {
+                new User
+                {
+                    Id = 3,
+                    FirstName = "Trajan",
+                    LastName = "Stevkovski",
+                    Password = "somePassword",
+                    Username = "stevt"
+                }
+            };
+
+            _userRepository.Setup(x => x.GetAll()).Returns(users);
+
+            var request = new RegisterUser
+            {
+                Username = "stevt1",
                 Password = "ASD123"
             };
 
             var service = new UserService(_userRepository.Object, _options);
 
-            //Act
-            //Assert
-            Assert.ThrowsException<Exception>(() =>
+            // Act
+            // Assert
+            Assert.ThrowsException<UserException>(() =>
             {
                 service.Register(request);
             });
+            // TODO: add mote asserts
         }
 
         [TestMethod]
-        public void Resgister_SuccessfullyRegisteredUser()
+        public void Register_SuccessfulyRegisteredUser()
         {
-            //Arange
-
+            // Arange
             var password = "asdzxc123";
+            var md5 = new MD5CryptoServiceProvider();
+            var md5data = md5.ComputeHash(Encoding.ASCII.GetBytes(password));
+            var hashedPassword = Encoding.ASCII.GetString(md5data);
 
             var users = new List<User>
             {
                 new User
                 {
-                    Id = 1,
-                    FirstName = "Aneta",
-                    LastName = "Stankovska",
+                    Id = 3,
+                    FirstName = "Trajan",
+                    LastName = "Stevkovski",
                     Password = "somePassword",
-                    Username = "astan"
+                    Username = "stevt"
                 }
             };
-            _userRepository.Setup(x => x.GetAll()).Returns(users);
-
-            var md5 = new MD5CryptoServiceProvider();
-            var md5data = md5.ComputeHash(Encoding.ASCII.GetBytes(password));
-            var hashedPassword = Encoding.ASCII.GetString(md5data);
 
             var request = new RegisterUser
             {
-                FirstName = "Aneta",
-                LastName = "Stankovska",
-                Username = "astan1",
-                Password = password
+                Username = "stevt1",
+                Password = password,
+                FirstName = "Trajan1",
+                LastName = "Stevkovski1"
             };
-
-            
 
             _userRepository.Setup(x => x.Insert(
                 It.IsAny<User>())).Callback((User user) =>
@@ -138,143 +139,144 @@ namespace SEDC.WebApi.Workshop.Notes.Tests
                 });
 
             var expectedUsers = 2;
-            
+
 
             var service = new UserService(_userRepository.Object, _options);
 
-            //Act
+            // Act
             service.Register(request);
 
-            //Assert
+            // Assert
             var expectedUser = users[1];
-            Assert.AreEqual(expectedUsers, users.Count());
+
+            Assert.AreEqual(expectedUsers, users.Count);
             Assert.AreEqual(expectedUser.FirstName, request.FirstName);
             Assert.AreEqual(expectedUser.LastName, request.LastName);
-            Assert.AreNotEqual(expectedUser.Password, request.Password);
             Assert.AreEqual(expectedUser.Username, request.Username);
+            Assert.AreNotEqual(expectedUser.Password, request.Password);
             Assert.AreEqual(expectedUser.Password, hashedPassword);
-
         }
 
         [TestMethod]
         public void Login_UserNotExists()
         {
-            //Arange
+            // Arange
             var users = new List<User>
             {
                 new User
                 {
-                    Id = 1,
-                    FirstName = "Aneta",
-                    LastName = "Stankovska",
+                    Id = 3,
+                    FirstName = "Trajan",
+                    LastName = "Stevkovski",
                     Password = "somePassword",
-                    Username = "astan"
+                    Username = "stevt"
                 }
             };
+
             _userRepository.Setup(x => x.GetAll()).Returns(users);
 
             var request = new LoginModel
             {
-                Username = "ast",
-                Password = "asd123"
+                Username = "tstev",
+                Password = "Password"
             };
 
             var service = new UserService(_userRepository.Object, _options);
 
-            //Act
-            //Assert
-            Assert.ThrowsException<Exception>(() =>
+            // Act
+            // Assert
+            Assert.ThrowsException<UserException>(() =>
             {
                 service.Login(request);
             });
+            // TODO: add more assertions
         }
 
         [TestMethod]
         public void Login_WrongPassword()
         {
+            // Arange
             var password = "asdzxc123";
             var md5 = new MD5CryptoServiceProvider();
             var md5data = md5.ComputeHash(Encoding.ASCII.GetBytes(password));
             var hashedPassword = Encoding.ASCII.GetString(md5data);
 
-            //Arange
             var users = new List<User>
             {
                 new User
                 {
-                    Id = 1,
-                    FirstName = "Aneta",
-                    LastName = "Stankovska",
+                    Id = 3,
+                    FirstName = "Trajan",
+                    LastName = "Stevkovski",
                     Password = hashedPassword,
-                    Username = "astan"
+                    Username = "stevt"
                 }
             };
+
             _userRepository.Setup(x => x.GetAll()).Returns(users);
 
             var request = new LoginModel
             {
-                Username = "astan",
+                Username = "stevt",
                 Password = "asd123"
             };
 
             var service = new UserService(_userRepository.Object, _options);
 
-            //Act
-            //Assert
-            Assert.ThrowsException<Exception>(() =>
+            // Act
+            // Assert
+            Assert.ThrowsException<UserException>(() =>
             {
                 service.Login(request);
             });
-
+            // TODO: add more assertions
         }
 
         [TestMethod]
         public void Login_ValidLogin()
         {
+            // Arange
             var password = "asdzxc123";
             var md5 = new MD5CryptoServiceProvider();
             var md5data = md5.ComputeHash(Encoding.ASCII.GetBytes(password));
             var hashedPassword = Encoding.ASCII.GetString(md5data);
 
-            //Arange
             var users = new List<User>
             {
                 new User
                 {
-                    Id = 1,
-                    FirstName = "Aneta",
-                    LastName = "Stankovska",
+                    Id = 3,
+                    FirstName = "Trajan",
+                    LastName = "Stevkovski",
                     Password = hashedPassword,
-                    Username = "astan"
+                    Username = "stevt"
                 }
             };
+
             _userRepository.Setup(x => x.GetAll()).Returns(users);
 
             var request = new LoginModel
             {
-                Username = "astan",
+                Username = "stevt",
                 Password = password
             };
 
-
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding
-                .ASCII
-                .GetBytes(_options.Value.Secret);
+            var key = Encoding.ASCII.GetBytes(_options.Value.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new System.Security.Claims.ClaimsIdentity(
                     new[]
                     {
                         new Claim(ClaimTypes.Name, $"{users[0].FirstName} {users[0].LastName}"),
-                        new Claim(ClaimTypes.NameIdentifier, users[0].Id.ToString()),
+                        new Claim(ClaimTypes.NameIdentifier, users[0].Id.ToString())
                     }
                     ),
                 Expires = DateTime.UtcNow.AddDays(7),
                 SigningCredentials = new SigningCredentials(
-                    new SymmetricSecurityKey(key),
-                    SecurityAlgorithms.HmacSha256Signature)
+                        new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
+
             var token = tokenHandler.CreateToken(tokenDescriptor);
 
             var expectedResult = new UserLoginDto
@@ -287,10 +289,11 @@ namespace SEDC.WebApi.Workshop.Notes.Tests
 
             var service = new UserService(_userRepository.Object, _options);
 
-            //Act
+            // Act
+
             var result = service.Login(request);
 
-            //Assert
+            // Assert
             Assert.AreEqual(expectedResult.Id, result.Id);
             Assert.AreEqual(expectedResult.FirstName, result.FirstName);
             Assert.AreEqual(expectedResult.LastName, result.LastName);

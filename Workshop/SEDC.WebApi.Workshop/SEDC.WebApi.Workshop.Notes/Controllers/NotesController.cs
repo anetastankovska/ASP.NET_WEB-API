@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using SEDC.WebApi.Workshop.Notes.Common.Exceptions;
 using SEDC.WebApi.Workshop.Notes.ServiceModels.NotesModels;
 using SEDC.WebApi.Workshop.Notes.Services.Interfaces;
+using Serilog;
 using System.Security.Claims;
 
 namespace SEDC.WebApi.Workshop.Notes.Controllers
@@ -11,27 +13,35 @@ namespace SEDC.WebApi.Workshop.Notes.Controllers
     public class NotesController : BaseController
     {
         private readonly INoteService _noteService;
+
         public NotesController(INoteService noteService)
         {
             _noteService = noteService;
         }
 
         [HttpGet("get-all")]
-        public ActionResult<NoteDto> GetNotes()
+        public ActionResult<IEnumerable<NoteDto>> GetNotes()
         {
             try
             {
                 var notes = _noteService.GetUserNotes(UserId);
                 return Ok(notes);
             }
+            catch (UserException ex)
+            {
+                Log.Error("USER {userId}.{name}: {message}",
+                    ex.UserId, ex.Name, ex.Message);
+                return BadRequest(ex.Message);
+            }
             catch (Exception ex)
             {
-
-                return BadRequest(ex.Message);
+                Log.Error(ex.Message);
+                return StatusCode(StatusCodes.Status400BadRequest,
+                    "Something went wrong. Please contact support!");
             }
         }
 
-        [HttpGet("get-by-id")]
+        [HttpGet("get-by-id/{id}")]
         public ActionResult<NoteDto> Get(int id)
         {
             try
@@ -41,7 +51,6 @@ namespace SEDC.WebApi.Workshop.Notes.Controllers
             }
             catch (Exception ex)
             {
-
                 return NotFound(ex.Message);
             }
         }
@@ -57,7 +66,6 @@ namespace SEDC.WebApi.Workshop.Notes.Controllers
             }
             catch (Exception ex)
             {
-
                 return BadRequest(ex.Message);
             }
         }
@@ -75,6 +83,5 @@ namespace SEDC.WebApi.Workshop.Notes.Controllers
                 return BadRequest(ex.Message);
             }
         }
-
     }
 }
