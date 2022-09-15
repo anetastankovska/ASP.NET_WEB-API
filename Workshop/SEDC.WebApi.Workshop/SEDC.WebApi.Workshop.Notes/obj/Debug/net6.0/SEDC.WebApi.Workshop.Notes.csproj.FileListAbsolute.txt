@@ -90,3 +90,4 @@ C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.W
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Serilog.Sinks.Console.dll
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
 C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes\bin\Debug\net6.0\web.config

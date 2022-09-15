@@ -1,0 +1,12 @@
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataModels\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.DataModels.deps.json
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataModels\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.DataModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataModels\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.DataModels.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.DataModels.csproj.AssemblyReference.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.DataModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.DataModels.AssemblyInfoInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.DataModels.AssemblyInfo.cs
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.DataModels.csproj.CoreCompileInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.DataModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataModels\obj\Release\net6.0\refint\SEDC.WebApi.Workshop.Notes.DataModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.DataModels.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.DataModels\obj\Release\net6.0\ref\SEDC.WebApi.Workshop.Notes.DataModels.dll

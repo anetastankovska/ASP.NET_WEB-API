@@ -1,0 +1,12 @@
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.ServiceModels\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.deps.json
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.ServiceModels\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.ServiceModels\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.ServiceModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.csproj.AssemblyReference.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.ServiceModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.ServiceModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.AssemblyInfoInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.ServiceModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.AssemblyInfo.cs
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.ServiceModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.csproj.CoreCompileInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.ServiceModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.ServiceModels\obj\Release\net6.0\refint\SEDC.WebApi.Workshop.Notes.ServiceModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.ServiceModels\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.ServiceModels\obj\Release\net6.0\ref\SEDC.WebApi.Workshop.Notes.ServiceModels.dll

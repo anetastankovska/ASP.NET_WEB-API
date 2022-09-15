@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="web.config" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
       <PrivateAssets>all</PrivateAssets>
@@ -23,6 +27,12 @@
     <ProjectReference Include="..\SEDC.WebApi.Workshop.Notes.DependencyInjection\SEDC.WebApi.Workshop.Notes.DependencyInjection.csproj" />
     <ProjectReference Include="..\SEDC.WebApi.Workshop.Notes.ServiceModels\SEDC.WebApi.Workshop.Notes.ServiceModels.csproj" />
     <ProjectReference Include="..\SEDC.WebApi.Workshop.Notes.Services\SEDC.WebApi.Workshop.Notes.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

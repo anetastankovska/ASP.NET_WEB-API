@@ -1,0 +1,17 @@
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.Common.deps.json
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.Common.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.Common.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.DataModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.DataModels.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\bin\Release\net6.0\SEDC.WebApi.Workshop.Notes.ServiceModels.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.Common.csproj.AssemblyReference.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.Common.AssemblyInfoInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.Common.AssemblyInfo.cs
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.Common.csproj.CoreCompileInputs.cache
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.Common.csproj.CopyComplete
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.Common.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\obj\Release\net6.0\refint\SEDC.WebApi.Workshop.Notes.Common.dll
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\obj\Release\net6.0\SEDC.WebApi.Workshop.Notes.Common.pdb
+C:\Users\Aneta\Desktop\SEDC\ASP.NET_WEB-API\Workshop\SEDC.WebApi.Workshop\SEDC.WebApi.Workshop.Notes.Common\obj\Release\net6.0\ref\SEDC.WebApi.Workshop.Notes.Common.dll

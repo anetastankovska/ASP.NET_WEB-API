@@ -15,30 +15,40 @@ namespace SEDC.WebApi.Workshop.Notes
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("MyPolicy", policy =>
+                {
+                    policy
+                    .AllowAnyHeader()
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod();
+                });
+            });
+
             // Add services to the container.
             builder.Services.AddAuthorization();
 
-            builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.File("Serilogs.txt"));
+            //Logs Everything
+            builder.Host.UseSerilog((ctx, lc) => lc
+                .WriteTo.File("SeriLogs.txt"));
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            //builder.Services.AddSwaggerGen();
-
-            builder.Services.AddSwaggerGen(
-                c =>
+            builder.Services.AddSwaggerGen(c =>
+            {
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
-                    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-                    {
-                        Description = @"JWT Authorization header using the Bearer scheme. \r\n\r\n 
+                    Description = @"JWT Authorization header using the Bearer scheme. \r\n\r\n 
                           Enter 'Bearer' [space] and then your token in the text input below.
                           \r\n\r\nExample: 'Bearer 12345abcdef'",
-                        Name = "Authorization",
-                        In = ParameterLocation.Header,
-                        Type = SecuritySchemeType.ApiKey,
-                        Scheme = "Bearer"
-                    });
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
 
-                    c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement()
                       {
                         {
                           new OpenApiSecurityScheme
@@ -56,22 +66,16 @@ namespace SEDC.WebApi.Workshop.Notes
                             new List<string>()
                           }
                         });
-                });
+            });
 
-            //Configuring AppSettings section
+            // Configuring AppSettings section
             var appConfig = builder.Configuration.GetSection("AppSettings");
             builder.Services.Configure<AppSettings>(appConfig);
-            builder.Services.Configure<AppSettings>(appConfig);
 
-            //Using AppSettings
+            // Using AppSettings
             var appSettings = appConfig.Get<AppSettings>();
-
-            builder.Services
-                .RegisterDataDependencies(appSettings.ConnectionString)
-                .RegisterServicesDependencies();
-            builder.Services.AddControllers();
-
             var secret = Encoding.ASCII.GetBytes(appSettings.Secret);
+
             builder.Services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -88,20 +92,33 @@ namespace SEDC.WebApi.Workshop.Notes
                     ValidateIssuer = false,
                     ValidateAudience = false
                 };
-            });
+            }
+            );
+
+            builder.Services
+                .RegisterDataDependencies(appSettings.ConnectionString)
+                .RegisterServicesDependencies();
+
+            builder.Services.AddControllers();
 
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+            //if (app.Environment.IsDevelopment())
+            //{
+            //    app.UseSwagger();
+            //    app.UseSwaggerUI();
+            //}
+
+            app.UseCors("MyPolicy");
+
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             app.UseAuthentication();
             app.UseAuthorization();
             app.MapControllers();
+
             app.UseMiddleware<ErrorHandlingMiddleware>();
 
             app.Run();
